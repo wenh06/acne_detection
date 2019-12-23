@@ -1,0 +1,7 @@
+.vscode/
+pretrained_models/
+export_models/
+saved_models/
+data/
+
+*.ipynb
