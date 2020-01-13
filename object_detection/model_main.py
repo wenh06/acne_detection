@@ -55,7 +55,7 @@ flags.DEFINE_boolean(
 )
 flags.DEFINE_integer(
     'keep_checkpoint_max', 0, 'If None or 0, all checkpoint files are kept',
-    lower_bound=5, upper_bound=1000
+    lower_bound=0, upper_bound=10000
 )
 FLAGS = flags.FLAGS
 

@@ -4,4 +4,5 @@ export_models/
 saved_models/
 data/
 
+.ipynb_checkpoints
 *.ipynb
