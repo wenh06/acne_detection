@@ -19,3 +19,9 @@ nohup python3.6 object_detection/model_main.py --pipeline_config_path=faster_rcn
 ```shell
 python3.6 object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path faster_rcnn_resnet101_coco.config --trained_checkpoint_prefix ./saved_models/model.ckpt-xxxxx --output_directory ./latest_models/
 ```
+
+## Pretrained model
+
+A pretrained model can be found at [MEGA](https://mega.nz/#!lUw2SAyS). Decryption key will be sent upon request to wenh-06-10@tsinghua.edu.cn
+
+P.S. [MEGA](https://mega.nz/) is the best cloud drive I've ever used. Strong recommendation for it.
