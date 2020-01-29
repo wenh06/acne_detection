@@ -1,8 +1,8 @@
 .vscode/
 pretrained_models/
 export_models/
+history_checkpoints/
 saved_models/
 data/
 
 .ipynb_checkpoints
-*.ipynb
