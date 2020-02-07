@@ -22,6 +22,6 @@ python3.6 object_detection/export_inference_graph.py --input_type image_tensor -
 
 ## Pretrained model
 
-A pretrained model can be found at [MEGA](https://mega.nz/#!lUw2SAyS). Decryption key will be sent upon request to wenh-06-10@tsinghua.edu.cn
+A pretrained model (faster_rcnn_resnet101) can be found at [MEGA](https://mega.nz/#!lUw2SAyS), another (faster_rcnn_inception_v2) at [MEGA](https://mega.nz/#!FUAHRagD). Decryption keys will be sent upon request to wenh-06-10@tsinghua.edu.cn
 
 P.S. [MEGA](https://mega.nz/) is the best cloud drive I've ever used. Strong recommendation for it.
