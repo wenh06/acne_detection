@@ -22,15 +22,24 @@ from absl import flags
 
 import tensorflow as tf
 
+import sys
+sys.path.insert(0, "/mnt/wenhao71/acne_detection/faster_rcnn_resnet101/slim/")
+sys.path.insert(0, "/mnt/wenhao71/acne_detection/faster_rcnn_resnet101/")
+
 from object_detection import model_hparams
 from object_detection import model_lib
 
 flags.DEFINE_string(
-    'model_dir', None, 'Path to output model directory '
-    'where event and checkpoint files will be written.')
-flags.DEFINE_string('pipeline_config_path', None, 'Path to pipeline config '
-                    'file.')
-flags.DEFINE_integer('num_train_steps', None, 'Number of train steps.')
+    'model_dir',
+    "/mnt/wenhao71/acne_detection/faster_rcnn_resnet101/saved_models/2020-02-19/",
+    'Path to output model directory where event and checkpoint files will be written.'
+)
+flags.DEFINE_string(
+    'pipeline_config_path',
+    "/mnt/wenhao71/acne_detection/faster_rcnn_resnet101/faster_rcnn_resnet101_coco.config",
+    'Path to pipeline config file.'
+)
+flags.DEFINE_integer('num_train_steps', 600000, 'Number of train steps.')
 flags.DEFINE_boolean('eval_training_data', False,
                      'If training data should be evaluated for this job. Note '
                      'that one call only use this in eval-only mode, and '
@@ -53,20 +62,13 @@ flags.DEFINE_boolean(
     'run_once', False, 'If running in eval-only mode, whether to run just '
     'one round of eval vs running continuously (default).'
 )
-flags.DEFINE_integer(
-    'keep_checkpoint_max', 0, 'If None or 0, all checkpoint files are kept',
-    lower_bound=0, upper_bound=10000
-)
 FLAGS = flags.FLAGS
 
 
 def main(unused_argv):
   flags.mark_flag_as_required('model_dir')
   flags.mark_flag_as_required('pipeline_config_path')
-  config = tf.estimator.RunConfig(
-    model_dir=FLAGS.model_dir,
-    keep_checkpoint_max=FLAGS.keep_checkpoint_max,
-  )
+  config = tf.estimator.RunConfig(model_dir=FLAGS.model_dir)
 
   train_and_eval_dict = model_lib.create_estimator_and_inputs(
       run_config=config,
