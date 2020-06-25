@@ -23,20 +23,20 @@ from absl import flags
 import tensorflow as tf
 
 import sys
-sys.path.insert(0, "/mnt/wenhao71/acne_detection/faster_rcnn_resnet101/slim/")
-sys.path.insert(0, "/mnt/wenhao71/acne_detection/faster_rcnn_resnet101/")
+sys.path.insert(0, "/mnt/wenhao71/workspace/acne_detection/faster_rcnn_resnet101/slim/")
+sys.path.insert(0, "/mnt/wenhao71/workspace/acne_detection/faster_rcnn_resnet101/")
 
 from object_detection import model_hparams
 from object_detection import model_lib
 
 flags.DEFINE_string(
     'model_dir',
-    "/mnt/wenhao71/acne_detection/faster_rcnn_resnet101/saved_models/2020-02-19/",
+    "/mnt/wenhao71/workspace/acne_detection/faster_rcnn_resnet101/saved_models/2020-02-19/",
     'Path to output model directory where event and checkpoint files will be written.'
 )
 flags.DEFINE_string(
     'pipeline_config_path',
-    "/mnt/wenhao71/acne_detection/faster_rcnn_resnet101/faster_rcnn_resnet101_coco.config",
+    "/mnt/wenhao71/workspace/acne_detection/faster_rcnn_resnet101/faster_rcnn_resnet101_coco.config",
     'Path to pipeline config file.'
 )
 flags.DEFINE_integer('num_train_steps', 600000, 'Number of train steps.')
