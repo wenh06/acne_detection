@@ -27,6 +27,7 @@ A pretrained model (faster_rcnn_resnet101) can be found at [MEGA](https://mega.n
 P.S. [MEGA](https://mega.nz/) is the best cloud drive I've ever used. Strong recommendation for it.
 
 ## Citation
+```latex
 @article{thc_2022_acne_detection,
      author = {Hao Wen and Wenjian Yu and Yuanqing Wu and Jun Zhao and Xiaolong Liu and Zhexiang Kuang and Rong Fan},
       title = {{Acne Detection and Severity Evaluation with Interpretable Convolutional Neural Network Models}},
@@ -38,3 +39,4 @@ P.S. [MEGA](https://mega.nz/) is the best cloud drive I've ever used. Strong rec
      volume = {30},
       pages = {143--153}
 }
+```
