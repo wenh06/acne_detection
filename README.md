@@ -25,3 +25,16 @@ python3.6 object_detection/export_inference_graph.py --input_type image_tensor -
 A pretrained model (faster_rcnn_resnet101) can be found at [MEGA](https://mega.nz/file/AZgDXS6Y#ampDThpnc0Gs8MOMlstLZSukGSDy_j_ThC90xOVWfLs), another (faster_rcnn_inception_v2) at [MEGA](https://mega.nz/file/ocpBxSzL#-oCR-Ovj5s4aQD02cI1zexUA4RT7ath2tE3742GHfMc).
 
 P.S. [MEGA](https://mega.nz/) is the best cloud drive I've ever used. Strong recommendation for it.
+
+## Citation
+@article{thc_2022_acne_detection,
+     author = {Hao Wen and Wenjian Yu and Yuanqing Wu and Jun Zhao and Xiaolong Liu and Zhexiang Kuang and Rong Fan},
+      title = {{Acne Detection and Severity Evaluation with Interpretable Convolutional Neural Network Models}},
+    journal = {Technology and Health Care},
+        doi = {10.3233/thc-228014},
+       year = {2022},
+      month = {2},
+  publisher = {{IOS Press}},
+     volume = {30},
+      pages = {143--153}
+}
