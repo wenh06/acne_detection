@@ -29,10 +29,11 @@ P.S. [MEGA](https://mega.nz/) is the best cloud drive I've ever used. Strong rec
 ## Citation
 ```latex
 @article{thc_2022_acne_detection,
-     author = {Hao Wen and Wenjian Yu and Yuanqing Wu and Jun Zhao and Xiaolong Liu and Zhexiang Kuang and Rong Fan},
       title = {{Acne Detection and Severity Evaluation with Interpretable Convolutional Neural Network Models}},
+     author = {Wen, Hao and Yu, Wenjian and Wu, Yuanqing and Zhao, Jun and Liu, Xiaolong and Kuang, Zhexiang and Fan, Rong},
     journal = {Technology and Health Care},
         doi = {10.3233/thc-228014},
+       issn = {1878-7401},
        year = {2022},
       month = {2},
   publisher = {{IOS Press}},
